@@ -3,6 +3,7 @@ const items = doc.getElementById("items")
 const but = doc.getElementById("button")
 const ped = doc.getElementById("pedidos")
 const total = doc.getElementById("valor_total_soma")
+const image = doc.getElementById("image")
 let pedido = [];
 const data = [
     {
@@ -55,6 +56,10 @@ const data = [
     }
 ]
 
+
+function testeImage(){
+    doc.getElementById("imagem").src = image.value
+}
 
 data.forEach(produto => {
     add_item(produto.id, produto.nome, produto.imagem, produto.valor)

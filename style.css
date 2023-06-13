@@ -52,7 +52,8 @@ body {
     text-decoration: underline;
 }
 
-.login {
+.login,
+.cad {
     border-radius: 50px;
     height: 650px;
     display: flex;
@@ -67,10 +68,65 @@ body {
 
 .login-form {
     align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+    width: 360px;
+    height: 220px;
 }
 
-.login input {
-    width: 480px;
+.login input[type="text"],
+.login input[type="password"],
+.cad input[type="text"],
+.cad input[type="number"] {
+    width: 320px;
+    height: 36px;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    transition: 0.1s ease-out;
+}
+
+.login-form input[type="submit"],
+.login-form input[type="reset"],
+.cad-form input[type="submit"],
+.cad-form input[type="reset"],
+.cad-form input[type="button"] {
+    grid-area: button;
+    font-size: 22px;
+    font-family: 'Orienta', sans-serif;
+    width: 180px;
+    height: 36px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: 1px solid white;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+.login-form input[type="submit"]:active,
+.login-form input[type="reset"]:active,
+.cad-form input[type="submit"]:active,
+.cad-form input[type="reset"]:active,
+.cad-form input[type="button"]:active {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.1s ease-in-out;
+}
+
+.cad-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 360px;
+    height: 320px;
 }
 
 .container .title {
@@ -105,7 +161,8 @@ body {
 }
 
 .container .item img,
-.pedido .item img {
+.pedido .item img,
+.cad-form img {
     width: 100px;
     margin: 0 15px 0 25px;
     align-self: center;
@@ -125,7 +182,7 @@ body {
 }
 
 .container .item button,
-.pedido .item button {
+.pedido .item button{
     grid-area: button;
     font-size: 22px;
     font-family: 'Orienta', sans-serif;
@@ -137,6 +194,22 @@ body {
     border: 1px solid white;
     outline: none;
     transition: 1s ease-in-out;
+}
+
+.container .item button:hover,
+.pedido .item button:hover{
+    background: white;
+    color: black;
+    border: 1px solid white;
+    transition: 0.3s ease-in;
+}
+
+.container .item button:active,
+.pedido .item button:active{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 0.1s ease-out;
 }
 
 .pedido {

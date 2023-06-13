@@ -19,20 +19,26 @@
             <li> <a href="contato.html"> Contato </a> </li>
         </ul>
     </nav>
-    <div class="login">
+    <div class="cad">
         <div class="title">
             <center>
                 <p> Cadastro </p>
             </center>
         </div>
-        <div id="login-form">
+        <form class="cad-form">
+            <img id="imagem" src="" style="width: 180px;">
             <input type="text" placeholder="Nome do produto">
-            <input type="password" placeholder="Link da imagem">
-            <input type="password" placeholder="Valor do produto">
-            <input type="password" placeholder="Tipo do produto">
+            <input type="text" id="image" onchange="testeImage()" placeholder="Link da imagem">
+            <input type="number" placeholder="Valor do produto">
+            <input type="text" placeholder="Tipo do produto">
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
-        </div>
+            <input type="button" value="Salvar">
+            <input type="button" value="Editar">
+            <input type="button" value="Atualizar">
+            <input type="button" value="Excluir">
+        </form>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
