@@ -1,12 +1,12 @@
 # Sushi Delivery
-> Simple aplication developed with HTML, CSS, and Vanilla JS
-### This aplication is for a college work for Web Development on 7th semester
+> Simple aplication developed with HTML, CSS, and Vanilla JS using JSON Objects manipulations for the logical
 
-### Used technologies
+> This project was developer for the final work of the web development discipline of 7th semester of my graduation in Computer Sciences
+
+#### Used technologies
 * HTML
 * CSS
 * JS
 * JSON Manipulation
 
-You can visualize here: 
-[Click here to acess the project](http://erfilho.github.io/entrega_sushi_dev_web)
+You can see the project here: [Click here to acess the project](http://erfilho.github.io/entrega_sushi_dev_web)
