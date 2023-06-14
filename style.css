@@ -53,7 +53,8 @@ body {
 }
 
 .login,
-.cad {
+.cad,
+.contact {
     border-radius: 50px;
     height: 650px;
     display: flex;
@@ -80,7 +81,10 @@ body {
 .login input[type="text"],
 .login input[type="password"],
 .cad input[type="text"],
-.cad input[type="number"] {
+.cad input[type="number"],
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="textarea"]{
     width: 320px;
     height: 36px;
     font-size: 30px;
